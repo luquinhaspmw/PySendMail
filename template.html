@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrevista de Emprego</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #e8e8e8;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666666;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3366cc;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .button:hover {
+      background-color: #235daa;
+    }
+
+    img{
+        max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <img src="cid:arte" alt="">
+        <h1>Entrevista de Emprego Marcada</h1>
+        <p>Prezado(a) {{name}}</p>
+        <p>Estamos felizes em informar que sua entrevista de emprego foi marcada para o dia {{date}} às {{time}}.</p>
+        <p>A entrevista será realizada em nosso escritório localizado no endereço:</p>
+        <p>{{address}}</p>
+        <p>Por favor, chegue alguns minutos antes do horário agendado e traga consigo todos os documentos relevantes.</p>
+        <p>Se tiver alguma dúvida ou precisar reagendar, entre em contato conosco pelo telefone {{company_phone}} ou pelo e-mail {{company_email}}.</p>
+        <p>Estamos ansiosos para conhecê-lo(a) pessoalmente e discutir mais sobre essa oportunidade.</p>
+        <p>Atenciosamente,<br>{{company_name}}</p>
+        <p>
+          <a class="button" href="{{company_website}}">Visite nosso site</a>
+        </p>
+      </div>
+</body>
+</html>
